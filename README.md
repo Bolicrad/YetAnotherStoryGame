@@ -1,2 +1,2 @@
-# YetAnotherStoryGame
-A remaster of a story base game.
+# Yet Another Story Game
+A remaster of a story based game.
