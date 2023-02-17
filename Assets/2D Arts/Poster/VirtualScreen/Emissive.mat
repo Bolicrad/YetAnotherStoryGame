@@ -67,7 +67,7 @@ Material:
     - _DoubleSidedGIMode: 0
     - _DoubleSidedNormalMode: 2
     - _DstBlend: 1
-    - _EmissiveIntensity: 4
+    - _EmissiveIntensity: 6
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
     - _OpaqueCullMode: 2
@@ -90,7 +90,7 @@ Material:
     - _StencilWriteMaskMV: 42
     - _SupportDecals: 1
     - _SurfaceType: 1
-    - _TransIntensity: 1
+    - _TransIntensity: 0.5
     - _TransPow: 2
     - _TransparentBackfaceEnable: 0
     - _TransparentCullMode: 2

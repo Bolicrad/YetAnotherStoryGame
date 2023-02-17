@@ -1,0 +1,49 @@
+Ayi.png
+size:1196,569
+filter:Linear,Linear
+pma:true
+1
+bounds:1079,105,82,103
+offsets:1,0,83,103
+2
+bounds:826,164,185,113
+offsets:41,111,227,224
+rotate:90
+3
+bounds:941,195,185,115
+offsets:41,109,227,224
+rotate:90
+dress
+bounds:2,2,565,627
+rotate:90
+foot
+bounds:631,351,247,216
+offsets:1,0,249,216
+head
+bounds:826,65,97,138
+offsets:0,0,110,152
+rotate:90
+left big arm
+bounds:1058,210,126,170
+offsets:8,43,137,224
+left forearm
+bounds:966,37,156,111
+offsets:1,2,157,118
+rotate:90
+left hand
+bounds:1079,26,92,77
+offsets:1,0,93,77
+right big arm
+bounds:880,382,185,223
+offsets:7,1,193,246
+rotate:90
+right forearm
+bounds:1105,412,89,155
+offsets:4,2,93,158
+right hand
+bounds:631,8,74,115
+offsets:17,0,91,126
+rotate:90
+trunk
+bounds:631,84,193,265
+offsets:27,0,247,376
