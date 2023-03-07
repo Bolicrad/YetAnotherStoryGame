@@ -21,7 +21,7 @@ namespace States
         
         protected void HorizontalMove(float speed)
         {
-            var dir = Mathf.Sign(Controller.move.ReadValue<float>());
+            var dir = Mathf.Sign(Controller.Move.ReadValue<float>());
             var velocityZ = dir * speed;
             Controller.rigidBody.velocity = Vector3.forward * velocityZ;
 

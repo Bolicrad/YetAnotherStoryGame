@@ -1,3 +1,5 @@
+using System;
+using Spine;
 using UnityEngine;
 using Spine.Unity;
 using UnityEngine.InputSystem;
@@ -7,6 +9,7 @@ public class PlayerController : MonoBehaviour
     #region Properties: Spine
 
     public SkeletonAnimation spineComponent;
+    [SpineEvent]public string footstepEventName;
 
     #endregion
     
@@ -21,11 +24,16 @@ public class PlayerController : MonoBehaviour
 
     #region Properties: Input
     
-    public InputActionAsset actionAsset;
+    [SerializeField]
+    private InputActionAsset actionAsset;
     private InputActionMap _playerActions;
-    public InputAction move; //1D Axis
-    public InputAction setRunning; //Button
-    public InputAction interact; //Button
+    
+    [NonSerialized]
+    public InputAction Move; //1D Axis
+    [NonSerialized]
+    public InputAction SetRunning; //Button
+    [NonSerialized]
+    public InputAction Interact; //Button
     
     #endregion
 
@@ -52,6 +60,12 @@ public class PlayerController : MonoBehaviour
 
     #endregion
 
+    #region Properties: Audio
+
+    [SerializeField] private AudioSource audioSource;
+
+    #endregion
+
     // Start is called before the first frame update
 
     private void Awake()
@@ -59,17 +73,17 @@ public class PlayerController : MonoBehaviour
         #region Init Input Actions
 
         _playerActions = actionAsset.FindActionMap("Player");
-        move = _playerActions.FindAction("Move");
-        setRunning = _playerActions.FindAction("IsRunning");
-        interact = _playerActions.FindAction("Interact");
+        Move = _playerActions.FindAction("Move");
+        SetRunning = _playerActions.FindAction("IsRunning");
+        Interact = _playerActions.FindAction("Interact");
 
         #endregion
 
         #region Assign Input Callbacks
 
-        setRunning.started += context => { isRunning = true; };
+        SetRunning.started += context => { isRunning = true; };
 
-        setRunning.canceled += context => { isRunning = false; };
+        SetRunning.canceled += context => { isRunning = false; };
 
         #endregion
 
@@ -78,9 +92,25 @@ public class PlayerController : MonoBehaviour
         Idle = new States.Idle(this);
         Walking = new States.Walking(this);
         Running = new States.Running(this);
+        
         State = Idle;
 
         #endregion
+
+        #region Set Up Animation Event
+
+        spineComponent.AnimationState.Event += AnimationStateOnEvent;
+
+        #endregion
+    }
+
+    private void AnimationStateOnEvent(TrackEntry entry, Spine.Event e)
+    {
+        if (e.Data.Name == footstepEventName)
+        {
+            //Play Foot Step Sound Effect
+            audioSource.Play();
+        }
     }
 
     private void OnEnable()
@@ -98,7 +128,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var moveValue = move.ReadValue<float>();
+        var moveValue = Move.ReadValue<float>();
 
         if (moveValue == 0)
         {
