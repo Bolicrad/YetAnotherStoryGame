@@ -152,13 +152,13 @@ MonoBehaviour:
   zSpacing: -0.0015
   useClipping: 1
   immutableTriangles: 0
-  pmaVertexColors: 0
+  pmaVertexColors: 1
   clearStateOnDisable: 0
   tintBlack: 0
   singleSubmesh: 0
   fixDrawOrder: 0
   addNormals: 1
-  calculateTangents: 0
+  calculateTangents: 1
   maskInteraction: 0
   maskMaterials:
     materialsMaskDisabled: []
@@ -239,6 +239,33 @@ MonoBehaviour:
   runRatio: 2.5
   isRunning: 0
   actionAsset: {fileID: -944628639613478452, guid: 5176b57fe7b674b1fa2554f3f294cf2e, type: 3}
+  move:
+    m_Name: Move
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 72a3163e-fd66-4660-babf-bf133910f004
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  setRunning:
+    m_Name: Set Running
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 1761e041-3a22-4312-8a80-faa74c41319e
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  interact:
+    m_Name: Interact
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: e790d21f-8716-476c-a0a6-18c1a03e420b
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
 --- !u!54 &4156416696617132111
 Rigidbody:
   m_ObjectHideFlags: 0
