@@ -1,0 +1,9 @@
+npc1.png
+size:719,411
+filter:Linear,Linear
+pma:true
+a
+bounds:2,2,407,514
+rotate:90
+b
+bounds:518,196,199,213

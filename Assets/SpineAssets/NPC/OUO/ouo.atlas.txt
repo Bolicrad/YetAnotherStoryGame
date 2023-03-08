@@ -1,0 +1,63 @@
+ouo.png
+size:982,535
+filter:Linear,Linear
+pma:true
+1
+bounds:535,57,130,189
+2
+bounds:550,328,136,205
+3
+bounds:413,323,135,210
+4
+bounds:173,23,140,213
+L ankle
+bounds:510,248,72,73
+R ankle
+bounds:510,248,72,73
+L arm
+bounds:829,3,67,126
+L calf
+bounds:96,22,75,214
+L hand
+bounds:898,63,67,66
+L shoe
+bounds:810,288,150,80
+L tight
+bounds:315,2,94,242
+L upper arm
+bounds:767,216,70,180
+rotate:90
+R arm
+bounds:667,9,67,103
+R calf
+bounds:2,9,92,227
+offsets:1,0,93,227
+R hand
+bounds:759,127,68,87
+R shoe
+bounds:829,131,138,83
+R tight
+bounds:411,4,122,240
+R upper arm
+bounds:584,256,70,181
+rotate:90
+collar
+bounds:736,23,89,69
+rotate:90
+head
+bounds:688,344,120,189
+jacket on
+bounds:2,238,212,295
+neck
+bounds:413,248,73,95
+rotate:90
+pelvis
+bounds:810,370,170,163
+pins
+bounds:667,114,140,90
+rotate:90
+small fire
+bounds:96,8,12,35
+rotate:90
+sweater
+bounds:216,246,195,287
