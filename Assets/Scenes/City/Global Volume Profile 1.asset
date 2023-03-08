@@ -95,16 +95,16 @@ MonoBehaviour:
     m_Value: 0
   color:
     m_OverrideState: 1
-    m_Value: {r: 0.10026584, g: 0.09761479, b: 0.11320752, a: 1}
+    m_Value: {r: 0.124101095, g: 0.1510219, b: 0.1981132, a: 1}
   center:
     m_OverrideState: 1
     m_Value: {x: 0.47, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.357
+    m_Value: 0.442
   smoothness:
     m_OverrideState: 1
-    m_Value: 0.234
+    m_Value: 0.247
   roundness:
     m_OverrideState: 0
     m_Value: 1
@@ -262,7 +262,7 @@ MonoBehaviour:
     m_Value: 0
   nearFocusEnd:
     m_OverrideState: 1
-    m_Value: 1.4
+    m_Value: 2.35
   farFocusStart:
     m_OverrideState: 1
     m_Value: 6.7
