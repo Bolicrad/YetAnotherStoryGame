@@ -367,7 +367,7 @@ MonoBehaviour:
   footstepEventName: footstep
   rigidBody: {fileID: 4156416696617132111}
   speed: 0.3
-  runRatio: 3
+  runRatio: 4
   isRunning: 0
   actionAsset: {fileID: -944628639613478452, guid: 5176b57fe7b674b1fa2554f3f294cf2e, type: 3}
   audioSource: {fileID: 6211480803569415268}
