@@ -135,30 +135,8 @@
                 },
                 {
                     "name": "",
-                    "id": "e4f74789-838a-4c63-aa3f-271b18b4b26b",
-                    "path": "<Mouse>/rightButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "IsRunning",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "1666df2f-51db-4f1f-a5e8-3e6fb0fc25a6",
-                    "path": "<Keyboard>/k",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "IsRunning",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "79fdaad9-61a8-486f-9fbf-a5e9b82382df",
-                    "path": "<Keyboard>/x",
+                    "path": "<Keyboard>/shift",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -191,18 +169,7 @@
                 {
                     "name": "",
                     "id": "de1cb62d-8a99-4d3e-9970-bfa526abff9b",
-                    "path": "<Keyboard>/j",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Interact",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "7d00aae6-a3e6-4f36-9578-d4efb2781c36",
-                    "path": "<Keyboard>/z",
+                    "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
