@@ -1,0 +1,23 @@
+xiaoqishi.png
+size:467,181
+filter:Linear,Linear
+pma:true
+body
+bounds:2,2,190,177
+offsets:0,26,190,203
+head
+bounds:194,24,153,155
+offsets:3,1,156,156
+left arm
+bounds:349,68,64,111
+offsets:1,0,65,111
+left foot
+bounds:415,113,50,66
+offsets:0,0,51,66
+right foot
+bounds:415,113,50,66
+offsets:0,0,51,66
+right arm
+bounds:349,2,64,111
+offsets:0,0,65,111
+rotate:90
