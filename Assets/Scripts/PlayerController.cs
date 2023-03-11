@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public float runRatio;
     public bool isRunning;
-    
+    public bool isInteracting;
     #endregion
 
     #region Properties: Input
@@ -82,7 +82,6 @@ public class PlayerController : MonoBehaviour
         #region Assign Input Callbacks
 
         SetRunning.started += context => { isRunning = true; };
-
         SetRunning.canceled += context => { isRunning = false; };
 
         #endregion
