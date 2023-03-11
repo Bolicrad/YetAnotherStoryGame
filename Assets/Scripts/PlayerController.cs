@@ -129,7 +129,7 @@ public class PlayerController : MonoBehaviour
     {
         var moveValue = Move.ReadValue<float>();
 
-        if (moveValue == 0)
+        if (moveValue == 0 || isInteracting)
         {
             //Change the Animation to Idle
             State.Stop();
