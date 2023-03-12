@@ -1436,6 +1436,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2767012668603727650, guid: 9477a42f7152c5146a638ad6974ca111, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2767012669187452173, guid: 9477a42f7152c5146a638ad6974ca111, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1542,15 +1546,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2767012669473598099, guid: 9477a42f7152c5146a638ad6974ca111, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2767012669473598099, guid: 9477a42f7152c5146a638ad6974ca111, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2767012669473598099, guid: 9477a42f7152c5146a638ad6974ca111, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 700
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9477a42f7152c5146a638ad6974ca111, type: 3}
@@ -9405,6 +9409,10 @@ PrefabInstance:
       propertyPath: container
       value: 
       objectReference: {fileID: 487457685}
+    - target: {fileID: 2976028113202122327, guid: b5d2622b2b894fb42879d5a90e45acb4, type: 3}
+      propertyPath: scrollView
+      value: 
+      objectReference: {fileID: 1378543082}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5d2622b2b894fb42879d5a90e45acb4, type: 3}
 --- !u!1 &659297385
@@ -11135,6 +11143,10 @@ PrefabInstance:
       propertyPath: container
       value: 
       objectReference: {fileID: 487457685}
+    - target: {fileID: 2976028113202122327, guid: b5d2622b2b894fb42879d5a90e45acb4, type: 3}
+      propertyPath: scrollView
+      value: 
+      objectReference: {fileID: 1378543082}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5d2622b2b894fb42879d5a90e45acb4, type: 3}
 --- !u!1 &851712640
@@ -13831,7 +13843,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009247443}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 1e-45, y: 0.7071068, z: -1e-45, w: 0.7071068}
   m_LocalPosition: {x: -3.3, y: 0.5558, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -19523,6 +19535,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366957988}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1378543082 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2767012668603727648, guid: 9477a42f7152c5146a638ad6974ca111, type: 3}
+  m_PrefabInstance: {fileID: 99231665}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1387808118
 GameObject:
   m_ObjectHideFlags: 0
@@ -23367,6 +23390,10 @@ PrefabInstance:
       propertyPath: container
       value: 
       objectReference: {fileID: 487457685}
+    - target: {fileID: 2976028113202122327, guid: b5d2622b2b894fb42879d5a90e45acb4, type: 3}
+      propertyPath: scrollView
+      value: 
+      objectReference: {fileID: 1378543082}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5d2622b2b894fb42879d5a90e45acb4, type: 3}
 --- !u!1 &1634623243
@@ -30449,7 +30476,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2012749796}
-  m_LocalRotation: {x: 3e-45, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
