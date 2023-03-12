@@ -13,8 +13,8 @@ namespace Triggers
         protected override void InteractOnPerformed(InputAction.CallbackContext obj)
         {
             base.InteractOnPerformed(obj);
-            container.sprite = container.sprite == image ? null : image;
-            scrollView.gameObject.SetActive(container.sprite == image);
+            container.sprite = PlayerController.isInteracting ? image : null;
+            scrollView.gameObject.SetActive(PlayerController.isInteracting);
         }
 
         protected override void OnPlayerExit()
