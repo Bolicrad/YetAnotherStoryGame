@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,35 +7,43 @@ namespace Triggers
     {
         // Start is called before the first frame update
         [SerializeField]private RectTransform hintUI;
-        private PlayerController _playerController;
-        
+        [SerializeField]private RectTransform hintUI_Cancel;
+        protected PlayerController PlayerController;
         protected void OnTriggerEnter(Collider other)
         {
             if (!other.CompareTag("Player")) return;
-            _playerController = other.GetComponentInParent<PlayerController>();
+            PlayerController = other.GetComponentInParent<PlayerController>();
             hintUI.gameObject.SetActive(true);
-            _playerController.Interact.performed += InteractOnPerformed;
+            PlayerController.Interact.performed += InteractOnPerformed;
         }
 
         protected void OnTriggerExit(Collider other)
         {
             StopAllCoroutines();
             hintUI.gameObject.SetActive(false);
-            _playerController.Interact.performed -= InteractOnPerformed;
+            if(hintUI_Cancel)hintUI_Cancel.gameObject.SetActive(false);
+            PlayerController.Interact.performed -= InteractOnPerformed;
             OnPlayerExit();
         }
 
         protected virtual void InteractOnPerformed(InputAction.CallbackContext obj)
         {
-            _playerController.isInteracting = !_playerController.isInteracting;
             Debug.Log($"Player triggered interaction inside {GetType()} {name}");
+            PlayerController.isInteracting = !PlayerController.isInteracting;
+            SwitchHintUI(PlayerController.isInteracting);
         }
 
         protected virtual void OnPlayerExit()
         {
-            _playerController.isInteracting = false;
-            _playerController = null;
+            PlayerController.isInteracting = false;
+            PlayerController = null;
             Debug.Log($"Player exited the region of {GetType()} {name}");
+        }
+
+        protected void SwitchHintUI(bool isCancel)
+        {
+            hintUI.gameObject.SetActive(!isCancel);
+            if(hintUI_Cancel)hintUI_Cancel.gameObject.SetActive(isCancel);
         }
     }
 }
