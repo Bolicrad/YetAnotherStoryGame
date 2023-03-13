@@ -28,7 +28,10 @@ namespace MaterialControllers
             switch (type)
             {
                 case MaterialControllerType.Random:
-                    material.SetFloat(EmissiveExposureWeight, Random.Range(0.0f, 1.0f));
+                    if (Time.frameCount % Math.Ceiling(period) == 0)
+                    {
+                        material.SetFloat(EmissiveExposureWeight, Random.Range(0.0f, 1.0f));
+                    }
                     break;
                 case MaterialControllerType.Swing:
                     material.SetFloat(EmissiveExposureWeight, _timer / period);
